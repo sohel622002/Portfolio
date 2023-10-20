@@ -1,0 +1,75 @@
+.main-content{
+    flex: 1;
+    padding: 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.greeting-header{
+    font-size: 20px;
+}
+
+.content-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main-header{
+    letter-spacing: 8px;
+}
+
+.main-sub-header{
+    font-size: 20px;
+}
+
+.main-button-container{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.readmore-btn,
+.contct-btn{
+    font-size: 16px;
+    padding: 15px 25px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.readmore-btn{
+    color: white;
+    border: 1px solid var(--btn-border);
+}
+
+.contct-btn{
+    color: var(--clr-purple);
+    border: 1px solid var(--clr-purple);
+}
+
+.main-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-social-links{
+    display: flex;
+    gap: 25px;
+}
+
+.link{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.link > img{
+    aspect-ratio: 1;
+    width: 35px;
+}
