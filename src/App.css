@@ -29,5 +29,32 @@ body{
 .main{
     display: flex;
     height: calc(100vh - 64.8px);
+    min-height: 600px;
 }
+
+.react-text,
+.firabase-text,
+.css-text,
+.html-text,
+.js-text{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.react-text{
+    color: #61DBFB;
+}
+.firabase-text{
+    color: #FFA611;
+}
+.css-text{
+    color: #2965F1;
+}
+.html-text{
+    color: #F06529;
+}
+.js-text{
+    color: #FFFF00;
+}
+
 

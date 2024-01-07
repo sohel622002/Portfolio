@@ -1,0 +1,75 @@
+:root {
+  --border-clr: #8b949e;
+}
+.project-container {
+  padding: 30px;
+  overflow-y: scroll;
+
+  /* To Hide Scrollbar In all Brousers */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.project-container::-webkit-scrollbar {
+  display: none;
+}
+
+.proect-wrapper {
+  margin-top: 30px;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.span2 {
+  grid-column: span 2;
+}
+
+.span2.project {
+  display: flex;
+  gap: 30px;
+}
+
+.project-image{
+    aspect-ratio: 16 / 9;
+}
+
+.project-image > img{
+    object-fit: cover;
+}
+
+.project {
+  border-radius: 10px;
+  border: 1px solid var(--border-clr);
+  padding: 25px;
+}
+
+.project-image {
+  flex: 1;
+}
+
+.project-detail {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-detail_small{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.project-detail-header,
+.project-detail-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.tech-used {
+  display: flex;
+  gap: 20px;
+}

@@ -8,7 +8,7 @@ import scsslogo from "../../Assets/skills/scss logo.png";
 import figmalogo from "../../Assets/skills/Figma logo.png";
 import reduxlogo from "../../Assets/skills/Redux logo.png";
 
-import zyklo_p_image from "../../Assets/Project images/Screenshot 2023-10-20 214845.png";
+import zyklo_p_image from "../../Assets/Project images/zyklo-react-app.png";
 import { NavLink } from "react-router-dom";
 
 function Aboutmain() {
