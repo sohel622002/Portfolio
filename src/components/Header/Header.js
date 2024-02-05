@@ -6,17 +6,20 @@ function Header() {
   return (
     <header className="header">
       <h2 className="logo">
-        <NavLink  to="/">Mo.Sohel</NavLink >
+        <NavLink to="/">Mo.Sohel</NavLink>
       </h2>
+      <span className="mobile-hamb-icon">
+        <i class="fa-solid fa-bars"></i>
+      </span>
       <ul className="header-navigation">
         <li>
-          <NavLink  to="/about">About</NavLink >
+          <NavLink to="/about">About</NavLink>
         </li>
         <li>
-          <NavLink  to="/projects">Projects</NavLink >
+          <NavLink to="/projects">Projects</NavLink>
         </li>
         <li>
-          <NavLink  to="/contact">Contact</NavLink >
+          <NavLink to="/contact">Contact</NavLink>
         </li>
       </ul>
     </header>

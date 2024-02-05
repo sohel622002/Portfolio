@@ -6,7 +6,7 @@ function Sidebarwithdetail() {
   return (
     <div className="sidebar-container">
       <div className="sidebar-content">
-        <img src={profile} className="round-profile" />
+        <img src={profile} className="round-profile" alt="profile"/>
         <div className="sidebar-detail">
           <h2 className="sidebar-name">Shaikh Mohammed Sohel</h2>
           <p className="sidebar-tagline">Always Learning & Growing</p>

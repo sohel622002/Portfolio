@@ -47,3 +47,17 @@
 {
     color: var(--clr-purple);
 }
+
+.mobile-hamb-icon{
+    font-size: 20px;
+    display: none;
+}
+
+@media (max-width:500px){
+    .header-navigation{
+        display: none;
+    }
+    .mobile-hamb-icon{
+        display: block;
+    }
+}

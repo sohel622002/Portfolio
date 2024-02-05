@@ -18,12 +18,12 @@ function Homemain() {
       </div>
       <div className='main-footer'>
         <div className='footer-social-links'>
-            <a className='link'>
-                <img src={githubLogo}/>
+            <a className='link' href='/'>
+                <img src={githubLogo} alt='github'/>
                 <span>sohel0602</span>
             </a>
-            <a className='link'>
-                <img src={instagram}/>
+            <a className='link' href='/'>
+                <img src={instagram} alt='instagram'/>
                 <span>sohelshaikh</span>
             </a>
         </div>

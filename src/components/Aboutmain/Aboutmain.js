@@ -71,14 +71,14 @@ function Aboutmain() {
         <div className="skill-container">
           <h3 className="skill-header">Skills</h3>
           <div className="skills-wrapper">
-            <img src={htmllogo} className="skill-png" />
-            <img src={csslogo} className="skill-png" />
-            <img src={jslogo} className="skill-png" />
-            <img src={reactlogo} className="skill-png" />
-            <img src={fireabeslogo} className="skill-png" />
-            <img src={scsslogo} className="skill-png" />
-            <img src={figmalogo} className="skill-png" />
-            <img src={reduxlogo} className="skill-png" />
+            <img src={htmllogo} className="skill-png" alt="html"/>
+            <img src={csslogo} className="skill-png" alt="css"/>
+            <img src={jslogo} className="skill-png" alt="js"/>
+            <img src={reactlogo} className="skill-png" alt="react"/>
+            <img src={fireabeslogo} className="skill-png" alt="firebase"/>
+            <img src={scsslogo} className="skill-png" alt="scss"/>
+            <img src={figmalogo} className="skill-png" alt="figma"/>
+            <img src={reduxlogo} className="skill-png" alt="redux"/>
           </div>
         </div>
 
@@ -111,7 +111,7 @@ function Aboutmain() {
           </div>
           <div className="sample-project">
             <div className="project-image">
-              <img src={zyklo_p_image} />
+              <img src={zyklo_p_image} alt="website-screenshot"/>
             </div>
             <div className="project-detail-container">
               <div className="project-detail">

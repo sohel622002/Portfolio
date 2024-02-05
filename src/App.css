@@ -33,7 +33,7 @@ body{
 }
 
 .react-text,
-.firabase-text,
+.firebase-text,
 .css-text,
 .html-text,
 .js-text{
@@ -44,7 +44,7 @@ body{
 .react-text{
     color: #61DBFB;
 }
-.firabase-text{
+.firebase-text{
     color: #FFA611;
 }
 .css-text{
@@ -55,6 +55,31 @@ body{
 }
 .js-text{
     color: #FFFF00;
+}
+
+
+
+.mobile-nav-links{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    bottom: 0;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-nav-links ul{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.mobile-nav-links li{
+    font-size: 20px;
 }
 
 

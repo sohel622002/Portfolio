@@ -67,9 +67,19 @@
     align-items: center;
     gap: 10px;
     cursor: pointer;
+    text-decoration: none;
+    color: inherit;
 }
 
 .link > img{
     aspect-ratio: 1;
     width: 35px;
+}
+
+@media (max-width:900px){
+    .main-footer{
+        align-items: start;
+        gap: 20px;
+        flex-direction: column;
+    }
 }
