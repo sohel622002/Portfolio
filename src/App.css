@@ -36,9 +36,25 @@ body{
 .firebase-text,
 .css-text,
 .html-text,
-.js-text{
+.javascript-text,
+.next-text,
+.tailwind-text,
+.typescript-text{
     font-size: 18px;
     font-weight: 600;
+    text-transform: capitalize;
+}
+
+.typescript-text{
+    color: #007acc;
+}
+
+.tailwind-text{
+    color: #38BDF8;
+}
+
+.next-text{
+    color: rgb(254, 254, 254);
 }
 
 .react-text{
@@ -53,7 +69,7 @@ body{
 .html-text{
     color: #F06529;
 }
-.js-text{
+.javascript-text{
     color: #FFFF00;
 }
 

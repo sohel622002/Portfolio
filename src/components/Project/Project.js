@@ -3,26 +3,25 @@ import "./Project.css";
 import "../../App.css";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
-import zyklo_p_image from "../../Assets/Project images/zyklo-react-app.png";
+function Project({ project }) {
 
-function Project() {
   return (
     <div className="project-container">
       <div className="project-image">
-        <img src={zyklo_p_image} alt="Zyklo React App" />
+        <img src={project.project_image} alt="Zyklo React App" />
       </div>
       <div className="project-detail">
         <div className="project-detail-extra">
           <div>
-            <h2>Zyklo React App</h2>
-            <a href="https://zyklo-react-app.web.app/"><FaExternalLinkAlt /></a>
+            <h2>{project.name}</h2>
+            <a href={project.liveAt}><FaExternalLinkAlt /></a>
           </div>
-          <p>This is some bio</p>
+          <p>{project.desc}</p>
         </div>
         <div className="tech-used">
-          <span className="react-text">React</span>
-          <span className="css-text">CSS</span>
-          <span className="firebase-text">Firebase</span>
+          {project.techs.map(tech => (
+            <span className={`${tech}-text`}>{tech}</span>
+          ))}
         </div>
       </div>
     </div>
