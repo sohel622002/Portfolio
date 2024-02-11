@@ -1,63 +1,90 @@
-.header{
-    padding: 20px 32px;
-    border-bottom: 1px solid var(--clr-dark-grey);
-    color: var(--font-color-grey);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.header {
+  padding: 20px 32px;
+  border-bottom: 1px solid var(--clr-dark-grey);
+  color: var(--font-color-grey);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 999;
 }
 
-.logo{
-    font-size: 20px;
-    font-weight: 600;
-    cursor: pointer;
+.logo {
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
 }
 
-.logo > a{
-    text-decoration: none;
-    color: inherit;
+.logo > a {
+  text-decoration: none;
+  color: inherit;
 }
 
-.header-navigation{
-    list-style: none;
-    display: flex;
-    gap: 40px;
+.header-navigation {
+  list-style: none;
+  display: flex;
+  gap: 40px;
 }
 
-.header-navigation > li > a{
-    text-decoration: none;
-    color: inherit;
-    position: relative;
+.header-navigation > li > a {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
 }
 
-.header-navigation > li > a.active:after{
-    content: '';
-    display: block;
-    position: absolute;
-    left: 50%;
-    bottom: -24px;
-    width: 150%;
-    height: 3px;
-    transform: translateX(-50%);
-    background-color: var(--clr-purple);
+.header-navigation > li > a.active:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: -24px;
+  width: 150%;
+  height: 3px;
+  transform: translateX(-50%);
+  background-color: var(--clr-purple);
 }
 
 .header-navigation > li > a.active,
-.header-navigation > li > a:hover
-{
-    color: var(--clr-purple);
+.header-navigation > li > a:hover {
+  color: var(--clr-purple);
 }
 
-.mobile-hamb-icon{
-    font-size: 20px;
+.mobile-hamb-icon {
+  font-size: 20px;
+  display: none;
+}
+
+.mobile-nav {
+  box-sizing: border-box;
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  bottom: 0;
+  padding: 20px 32px;
+  background-color: black;
+  border: 1px solid white;
+  transform: translateY(0%);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.mob-header-navigation a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.mob-header-navigation {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (max-width: 500px) {
+  .header-navigation {
     display: none;
-}
-
-@media (max-width:500px){
-    .header-navigation{
-        display: none;
-    }
-    .mobile-hamb-icon{
-        display: block;
-    }
+  }
+  .mobile-hamb-icon {
+    display: block;
+  }
 }
