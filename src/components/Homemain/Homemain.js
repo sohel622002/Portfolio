@@ -21,7 +21,7 @@ function Homemain() {
             <button className="readmore-btn">Read more</button>
           </NavLink>
           <a
-            href="mailto:your-email@example.com?subject=Inquiry%20from%20Website"
+            href="mailto:sohelshaikh01231@gmail.com?subject=Inquiry%20from%20Website"
             target="_blank"
           >
             <button className="contct-btn">Contact</button>
