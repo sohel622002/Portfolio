@@ -8,7 +8,7 @@ function Header() {
 
   const mobileNavStyle = {
     opacity: mobileNavOpen ? 1 : 0,
-    transform: mobileNavOpen ? 'translateY(100%)' : 'translateY(0%)'
+    transform: mobileNavOpen ? "translateY(100%)" : "translateY(0%)",
   };
 
   return (
@@ -34,10 +34,10 @@ function Header() {
         <div className="mobile-nav" style={mobileNavStyle}>
           <ul className="mob-header-navigation">
             <li>
-              <NavLink to="/about">About</NavLink>
+              <NavLink to="/about" onClick={() => setMobileNavOpen(false)}>About</NavLink>
             </li>
             <li>
-              <NavLink to="/projects">Projects</NavLink>
+              <NavLink to="/projects" onClick={() => setMobileNavOpen(false)}>Projects</NavLink>
             </li>
           </ul>
         </div>
