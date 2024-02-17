@@ -19,7 +19,9 @@ function Homemain() {
           <a href="/about">
             <button className="readmore-btn">Read more</button>
           </a>
-          <button className="contct-btn">Contact</button>
+          <a href="mailto:your-email@example.com?subject=Inquiry%20from%20Website" target="_blank">
+            <button className="contct-btn">Contact</button>
+          </a>
         </div>
       </div>
       <div className="main-footer">
