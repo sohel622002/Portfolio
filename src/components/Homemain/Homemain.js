@@ -3,6 +3,7 @@ import "./Homemain.css";
 import githubLogo from "../../Assets/logos/GitHub logo.png";
 import instagram from "../../Assets/logos/Instagram.png";
 import Lovefooter from "../Lovefooter/Lovefooter";
+import { NavLink } from "react-router-dom";
 
 function Homemain() {
   return (
