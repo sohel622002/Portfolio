@@ -16,10 +16,13 @@ function Homemain() {
         </h1>
         <p className="main-sub-header">A Frontend Developer & a Keen Lerner</p>
         <div className="main-button-container">
-          <a href="/about">
+          <NavLink to="/about">
             <button className="readmore-btn">Read more</button>
-          </a>
-          <a href="mailto:your-email@example.com?subject=Inquiry%20from%20Website" target="_blank">
+          </NavLink>
+          <a
+            href="mailto:your-email@example.com?subject=Inquiry%20from%20Website"
+            target="_blank"
+          >
             <button className="contct-btn">Contact</button>
           </a>
         </div>
