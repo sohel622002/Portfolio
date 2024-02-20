@@ -3,6 +3,8 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const Project = require("./models/project.model");
 
+// This is updated
+
 const app = express();
 app.use(cors());
 app.use(express.json());
