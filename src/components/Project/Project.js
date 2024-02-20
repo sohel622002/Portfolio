@@ -4,7 +4,6 @@ import "../../App.css";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 function Project({ project }) {
-
   return (
     <div className="project-container">
       <div className="project-image">
@@ -13,7 +12,7 @@ function Project({ project }) {
       <div className="project-detail">
         <div className="project-detail-extra">
           <div>
-            <h2>{project.name}</h2>
+            <h2>{project.project_name}</h2>
             <a href={project.liveAt}><FaExternalLinkAlt /></a>
           </div>
           <p>{project.desc}</p>

@@ -1,5 +1,7 @@
 .project-container{
     border: 1px solid rgba(255, 255, 255, .5);
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .project-image{
@@ -50,4 +52,10 @@
     align-items: center;
     gap: 7px;
     font-size: clamp(1rem, 1.2vw, 1.5rem);
+}
+
+@media (max-width:500px){
+    .project-container{
+        padding: 10px;
+    }
 }

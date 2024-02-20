@@ -1,40 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Project from "../../components/Project/Project";
 
 import styles from "./Projects.module.css";
 
-const projects = [
-  {
-    id : 12345,
-    name : "Zyklo React App",
-    project_image : "/Assets/Project images/zyklo-react-app.png",
-    desc : "Zyklo React App Where user can login & signup and share posts, like posts, comment on other's posts",
-    techs : ["react", "css", "firebase"],
-    liveAt : "https://zyklo-react-app.web.app/"
-  },
-  {
-    id : 12310,
-    name : "Origin Financial",
-    project_image : "/Assets/Project images/origin-financial.png",
-    desc : "Origin Financial App to interact Doctors and patients.",
-    techs : ["next", "tailwind", "typescript"],
-    liveAt : "https://origin-fincancial.vercel.app/"
-  },
-  {
-    id : 12350,
-    name : "Lelong ",
-    project_image : "/Assets/Project images/lelong.png",
-    desc : "Lelong bidding website for client",
-    techs : ["html", "css", "javascript"],
-    liveAt : "https://lelongshopmalaysia.com/"
-  },
-]
-
 function Projects() {
+  const [projects, setProjects] = useState(null);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const data = fetch("http://localhost:5000/projects")
+      .then((res) => res.json())
+      .then((d) => setProjects(d))
+      .catch((error) => setError("There is Error Fetching Project Data!"));
+  }, []);
+
   return (
     <div className={styles.projects_container}>
-      {projects.map(project => (
-        <Project project={project}/>
+      {error}
+      {projects?.map((project) => (
+        <Project project={project} />
       ))}
     </div>
   );

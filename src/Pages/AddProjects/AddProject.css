@@ -1,0 +1,33 @@
+.Addproject-container{
+    width: min(800px, 80%);
+    margin-inline: auto;
+    margin-top: 40px;
+    border: 1px solid white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project-name-input{
+    display: flex;
+    gap: 20px;
+}
+
+.project-name-input h3{
+    flex: .4;
+}
+
+.project-name-input input{
+    flex: 1;
+    background-color: transparent;
+    border: 1px solid gray;
+    padding: 7px 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+}
+
+.project-name-input option{
+    color: black;
+}

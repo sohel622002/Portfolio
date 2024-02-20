@@ -6,3 +6,9 @@
   grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
   gap: 20px;
 }
+
+@media (max-width:500px){
+  .projects_container{
+    padding: 7px;
+  }
+}

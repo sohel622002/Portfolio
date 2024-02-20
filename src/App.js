@@ -4,28 +4,18 @@ import Home from "./Pages/Home";
 import { Routes, Route, NavLink } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Projects from "./Pages/Projects/Projects";
+import AddProject from "./Pages/AddProjects/AddProject";
 
 function App() {
   return (
     <div className="App">
-      {/* <div className="mobile-nav-links">
-        <ul>
-          <li>
-            <NavLink to="/about">About</NavLink>
-          </li>
-          <li>
-            <NavLink to="/projects">Projects</NavLink>
-          </li>
-          <li>
-            <NavLink to="/contact">Contact</NavLink>
-          </li>
-        </ul>
-      </div> */}
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
+
+        <Route path="/add-project" element={<AddProject />} />
       </Routes>
     </div>
   );
