@@ -8,7 +8,7 @@ function Projects() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    const data = fetch(`https://myportfolio-backend-dg0a.onrender.com/projects`)
+    const data = fetch(`${process.env.REACT_APP_BACKEND_URL}/projects`)
       .then((res) => res.json())
       .then((d) => setProjects(d))
       .catch((error) => setError("There is Error Fetching Project Data!"));
